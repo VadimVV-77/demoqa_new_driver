@@ -22,3 +22,9 @@ class WebElement:
 
     def get_text(self):
         return str(self.find_element().text)
+
+    def click_force(self):
+        return self.find_element().click_force()
+
+    def visible(self):
+        return self.find_element().is_displayed()
