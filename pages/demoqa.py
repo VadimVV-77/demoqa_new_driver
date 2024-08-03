@@ -12,3 +12,5 @@ class DemoQa(BasePage):
         self.btn_elements = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1)')
         self.footer = WebElement(driver, '#app > footer')
         self.btn_books = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(6)')
+
+        self.h5 = WebElement(driver, '.card.mt-4.top-card')
