@@ -35,3 +35,15 @@ class Tables(BasePage):
         self.department = WebElement(driver, '#department')
 
         self.row_4 = WebElement(driver, '.web-tables-wrapper .ReactTable .rt-tbody > div:nth-child(4)')
+
+        self.colon_first_name = WebElement(driver, '.ReactTable .rt-resizable-header-content')
+
+        self.colon_last_name = WebElement(driver, '.ReactTable .-header > div > div:nth-child(2)')
+
+        self.colon_age = WebElement(driver, '.ReactTable .-header > div > div:nth-child(3)')
+
+        self.colon_user_email = WebElement(driver, '.ReactTable .-header > div > div:nth-child(4)')
+
+        self.colon_salary = WebElement(driver, '.ReactTable .-header > div > div:nth-child(5)')
+
+        self.colon_department = WebElement(driver, '.ReactTable .-header > div > div:nth-child(6)')

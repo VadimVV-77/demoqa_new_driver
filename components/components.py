@@ -54,6 +54,15 @@ class WebElement:
             return value
         return True
 
+    # def check_attribute_contains_part(self, part: str):
+    #     full_class = self.get_dom_attribute('class')
+
+    def check_attribute_contains_part(self, attribute: str, part: str):
+        full_attribute = self.get_dom_attribute(attribute)
+        if full_attribute and part in full_attribute:
+            return True
+        return False
+
     def get_by_type(self):
         if self.locator_type == 'id':
             return By.ID

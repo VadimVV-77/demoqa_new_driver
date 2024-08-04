@@ -22,7 +22,6 @@ def test_login_form(browser):
     form_page.btn_close_modal.click_force()
 
 
-
 def teste_state(browser):
     form_page = FormPage(browser)
     form_page.visit()
